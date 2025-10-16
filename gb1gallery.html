@@ -1,0 +1,116 @@
+<head>
+<title> Mou Bios </title>
+</head>
+<link href='https://fonts.googleapis.com/css?family=GFS Didot' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    background-image:url('cellmodelbg.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+td a{
+   float: center;
+   margin-top: 30px;
+   min-height: 400px;
+   margin-center: 60px;
+   font-size: 17px;
+}
+td a { 
+    border: 1px solid #fff;    
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+   transition: 0.5 ease;
+     line-height: 5;
+} 
+td a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.title h1{
+    color: #fff;
+    font-family: 'GFS Didot';
+    font-size: 30px;
+    float: center;
+    margin-top: 30px;
+    margin-center: auto;
+}
+table {
+    border-color: #fff;
+    border-size: 3px;
+    border-style: solid
+}
+.hun {
+    color: #fff;
+    font-size: 15px;
+}
+.grid-gallery {
+  --size: 100px;
+  display: grid;
+  grid-template-columns: repeat(6, var(--size));
+  grid-auto-rows: var(--size);
+  gap: 5px;
+  place-items: start center;
+  margin-bottom: var(--size);
+}
+.grid-gallery img {
+  width: calc(var(--size) * 2);
+  height: calc(var(--size) * 2);
+  object-fit: cover;
+  grid-column: auto / span 2;
+  border-radius: 5px;
+  clip-path: path("M90,10 C100,0 100,0 110,10 190,90 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z"); 
+}
+.grid-gallery img:nth-child(5n - 1) { 
+  grid-column: 2 / span 2 
+}
+.grid-gallery:has(img:hover) img:not(:hover) {
+  filter: brightness(0.5) contrast(0.5);
+}
+.grid-gallery img {
+  /* ... */
+  transition: clip-path 0.25s, filter 0.75s;
+}
+
+.grid-gallery img:hover {
+  clip-path: path("M0,0 C0,0 200,0 200,0 200,0 200,100 200,100 200,100 200,200 200,200 200,200 100,200 100,200 100,200 100,200 0,200 0,200 0,100 0,100 0,100 0,100 0,100Z");
+  transition: clip-path 0.25s, filter 0.25s;
+  z-index: 1;
+}
+.grid-gallery a:focus {
+  outline: 1px dashed black;
+  outline-offset: -5px;
+}
+</style>
+<table border=10 width="100%" height=100%> 
+<tr height=100px>
+<td class="title" colspan=2 align=center valign=center> 
+  <h1>♡₊˚・₊✧⋆⭒˚｡⋆ Love and Fear ♡₊˚・₊✧⋆⭒˚｡⋆</h1>  </td>
+</tr>
+<tr>
+<td width=250px align=center valign=center> 
+<a href=gb1index.html><i class="fa fa-home"></i>Home</a><br>
+<a href=gb1gallery.html><i class="fa fa-camera-retro"></i>Gallery</a><br>
+<a href=gb1playlist.html><i class="fa fa-volume-up"></i>Playlist</a><br>
+</td>
+<td>
+<article class="grid-gallery">
+  <img src="cellmodel1.1.jpg"/pic-1.webp" alt="description of picture 1" />
+  <img src="cellmodel1.2.jpg"/pic-2.webp" alt="description of picture 2" />
+  <img src="cellmodel1.3.jpg"/pic-3.webp" alt="description of picture 3" />
+  <img src="cellmodel1.4.jpg"/pic-4.webp" alt="description of picture 4" />
+  <img src="cellmodel1.5.jpg"/pic-5.webp" alt="description of picture 5" />
+  <img src="cellmodel1.6.jpg"/pic-6.webp" alt="description of picture 6" />
+  <img src="cellmodel1.7.jpg"/pic-7.webp" alt="description of picture 7" />
+  <img src="cellmodel1.8.png"/pic-8.webp" alt="description of picture 8" />
+</article>
+</td>
+</tr>
+<tr height-50px>
+<td class='hun' colspan=2 align=center font-color=#fff;><marquee> Thrilling Dilemma :( </marquees</td>
+</body>
+</html>
